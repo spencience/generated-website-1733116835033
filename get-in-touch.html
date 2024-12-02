@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with the Ontologic Design Institute - Join our community of designers, researchers, and philosophers exploring the intersection of being and design.">
+    <meta name="keywords" content="ontologic design, contact, design philosophy, design research, collaboration">
+    <title>Get in Touch | Ontologic Design Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="gradient-bg text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="https://ontologic.design" class="text-2xl font-bold">Ontologic Design Institute</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://ontologic.design/principles" class="hover:text-gray-200">Principles</a>
+                    <a href="https://ontologic.design/projects" class="hover:text-gray-200">Projects</a>
+                    <a href="https://ontologic.design/research" class="hover:text-gray-200">Research</a>
+                    <a href="https://ontologic.design/community" class="hover:text-gray-200">Community</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <aside class="md:col-span-3 space-y-4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold text-lg mb-4">Contact Options</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://ontologic.design/contact/schedule" class="text-blue-600 hover:underline">Schedule a Call</a></li>
+                        <li><a href="https://ontologic.design/contact/collaborate" class="text-blue-600 hover:underline">Research Collaboration</a></li>
+                        <li><a href="https://ontologic.design/contact/membership" class="text-blue-600 hover:underline">Join as Member</a></li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <section class="md:col-span-9">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h1 class="text-3xl font-bold mb-6">Get in Touch</h1>
+                    <p class="text-gray-600 mb-8">We welcome dialogue with fellow designers, researchers, and anyone interested in exploring the intersection of being and design. Choose the most appropriate way to connect with us below.</p>
+                    
+                    <form method="GET" action="https://ontologic.design/contact/submit" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="interest" class="block text-sm font-medium text-gray-700 mb-2">Area of Interest</label>
+                            <select id="interest" name="interest" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="research">Research Collaboration</option>
+                                <option value="membership">Institute Membership</option>
+                                <option value="courses">Online Courses</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="gradient-bg text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="font-bold text-lg mb-2">Visit Our Institute</h3>
+                            <p class="text-gray-600">
+                                Ontologic Design Institute<br>
+                                123 Philosophy Lane<br>
+                                Design District<br>
+                                San Francisco, CA 94105
+                            </p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h3 class="font-bold text-lg mb-2">Office Hours</h3>
+                            <p class="text-gray-600">
+                                Monday - Friday: 9:00 AM - 5:00 PM PST<br>
+                                Virtual meetings available globally<br>
+                                Research library access by appointment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">About Us</h4>
+                    <p class="text-gray-400">Exploring the intersection of being and design</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <a href="https://ontologic.design/contact" class="text-gray-400 hover:text-white">Get in touch</a>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://ontologic.design/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="https://ontologic.design/terms" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://ontologic.design/social/twitter" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="https://ontologic.design/social/linkedin" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Ontologic Design Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
